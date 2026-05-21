@@ -36,6 +36,7 @@ async function loadRooms() {
     rooms.forEach(room => {
         const li = document.createElement("li")
         li.textContent = `Rum ${room.roomNumber}, ${room.beds} sängar, ${room.pricePerNight} kr/natt`
+        li.className = "list-group-item";
         list.append(li)
     })
 }
