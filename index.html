@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensionat</title>
+</head>
+<body>
+
+    <h1>Välkommen till Pensionat</h1>
+    <p>Vi erbjuder bekväma rum och en avkopplande atmosfär för alla våra gäster.</p>
+    <ul>
+        <li>Gratis Wi-Fi</li>
+        <li>Frukost ingår</li>
+        <li>Nära till sevärdheter</li>
+    </ul>
+    
+
+    <section>
+        <h2>Skapa kund</h2>
+        <label for="'firtName">Förnamn</label>
+        <br>
+        <input id="firstName" placeholder="Förnamn">
+        <br>
+        <label for="'lastName">Efternamn</label>
+        <br>
+        <input id="lastName" placeholder="Efternamn">
+        <br>
+        <label for="'email">Email</label>
+        <br>
+        <input id="email" placeholder="Email">
+        <br>
+        <label for="'phone">Telefon</label>
+        <br>
+        <input id="phone" placeholder="Telefon">
+    
+        <br>
+        <button onclick="createCustomer()">Skapa ny kund</button>
+    </section>
+
+
+    <section>
+        <h2>Rum</h2>
+        <button onclick="loadRooms()">Hämta rum</button>
+        <ul id="room"></ul>
+    </section>
+
+    <p id="message"></p>
+    
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
