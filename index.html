@@ -42,14 +42,32 @@
     <section>
         <h2>Rum</h2>
         <button onclick="loadRooms()">Hämta rum</button>
-        <ul id="room"></ul>
+        <ul id="rooms"></ul>
     </section>
 
     <p id="message"></p>
     
+    
+    <section>
+        <h2>Skapa bokning</h2>
+        <br>
+        <input id="customerId" placeholder="Kund-ID">
+        <br>
+        <input id="roomId" placeholder="Rum-ID">
+        <br>
+        <input id="startDate" type="date">
+        <br>
+        <input id="endDate" type="date">
+        <br>
+        <button onclick="createBooking()">Skapa bokning</button>
+
+
+    </section>
+
+
+
 
     <script src="app.js"></script>
-
 
 </body>
 </html>
